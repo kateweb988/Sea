@@ -1,0 +1,181 @@
+.template-content
+   font-family: 'Cormorant', sans-serif
+   background: var(--color-bg)
+   font-weight: 500
+   font-size: 16px
+   line-height: 140%
+   color: var(--color-text-black)
+   overflow: hidden
+   position: relative
+   display: flex
+   flex-direction: column
+   min-height: 100vh
+   --spacing-3xs: clamp(0.25rem, 0.4vw, 0.5rem)
+   --spacing-2xs: clamp(0.5rem, 0.7vw, 1rem)
+   --spacing-xs: clamp(1rem, 1.7vw, 2rem)
+   --spacing-sm: clamp(1.5rem, 2.6vw, 3.125rem)
+   --spacing-md: clamp(2rem, 3.5vw, 4.25rem)
+   --spacing-lg: clamp(3rem, 5.2vw, 6.25rem)
+   --spacing-xl: clamp(4rem, 7.3vw, 8.75rem)
+   --spacing-2xl: clamp(5rem, 8.5vw, 10.25rem)
+   --spacing-3xl: clamp(6rem, 12.3vw, 14.75rem)
+   --spacing-block: clamp(3.125rem, calc(2.232rem + 4.464vw), 6.25rem)
+   --color-primary: #042D47
+   --color-text-black: #000000
+   --color-text-yellow: #EDD1B5
+   --color-text-white: #FFFFFF
+   --color-text-blue: #cef7ff
+   --color-bg: #FFFFFF
+.template-content[data-theme="blue"]
+   .confirm__bg_blue
+      display: block
+   .main__area_blue
+      display: block
+   .personal_greeting__pic_blue
+      display: block
+   .calendar__bg_blue
+      display: block
+   .timing__bg_blue
+      display: block
+   .confirm__bg_blue
+      display: block
+   .main__btn
+      background: url("../img/menu-blue.svg") center / contain no-repeat
+   .menu__close
+      background: url("../img/close-blue.svg") center / contain no-repeat
+.template-content[data-theme="red"]
+   --color-primary: #45090A
+   .main__area_red
+      display: block
+   .personal_greeting__pic_red
+      display: block
+   .timer__item
+      background: url(../img/timer-red.webp) center / cover no-repeat
+   .calendar__bg_red
+      display: block
+   .timing__bg_red
+      display: block
+   .confirm__bg_red
+      display: block
+   .main__btn
+      background: url("../img/menu-red.svg") center / contain no-repeat
+   .menu__close
+      background: url("../img/close-red.svg") center / contain no-repeat
+.template-content[data-theme="green"]
+   --color-primary: #815E25
+   .main__area_green
+      display: block
+   .personal_greeting__pic_green
+      display: block
+   .timer__item
+      background: url(../img/timer-green.webp) center / cover no-repeat
+   .calendar__bg_green
+      display: block
+   .timing__bg_green
+      display: block
+   .confirm__bg_green
+      display: block
+   .main__btn
+      background: url("../img/menu-green.svg") center / contain no-repeat
+   .menu__close
+      background: url("../img/close-green.svg") center / contain no-repeat
+.template-content
+   a
+      text-decoration: none
+      box-sizing: border-box
+      transition: 0.5s !important
+      &:hover
+         color: var(--color-text-yellow)
+   ul
+      margin: 0
+      padding: 0
+      list-style-type: none
+   a
+      transition: color 0.5s ease
+      box-sizing: border-box
+   button
+      cursor: pointer
+      box-sizing: border-box
+   textarea
+      transition: border 0.5s
+      box-sizing: border-box
+      &:focus
+         transition: border 0.5s
+         outline: none
+   input
+      transition: 0.5s
+      box-sizing: border-box
+      &:disabled
+         pointer-events: none
+         opacity: 0.5
+      &:focus
+         transition: 0.5s
+      &:focus-visible
+         outline: initial
+   div
+      box-sizing: border-box
+.container
+   padding: 0 15px
+   width: 100%
+   max-width: 1208px
+   margin: 0 auto
+.d-flex, .q
+   display: flex
+.hide
+   display: none !important
+.title
+   margin: 0
+   color: var(--color-text-yellow)
+   font-size: clamp(40px, calc(30.571px + 2.946vw), 73px)
+   line-height: 110%
+   width: 100%
+   max-width: 634px
+   font-weight: 400
+   display: flex
+   flex-direction: column
+   font-family: 'Felidae'
+   small
+      font-family: 'Bickham Script Three'
+      font-size: clamp(44px, calc(42.286px + 0.536vw), 50px)
+      font-weight: 400
+      line-height: 53%
+      display: block
+      margin-bottom: -6px
+   span
+      font-size: clamp(50px, calc(48.286px + 0.536vw), 56px)
+      letter-spacing: 0.5px
+      position: relative
+      &::first-letter
+         font-size: clamp(54px, calc(45.714px + 2.589vw), 83px)
+         font-family: 'Majestic'
+      &:first-of-type
+         &::first-letter
+            padding-right: 24px
+.title2
+   margin: 0
+   font-family: 'Felidae'
+   font-weight: 400
+   font-size: clamp(26px, calc(17.143px + 2.768vw), 57px)
+   line-height: 100%
+   color: var(--color-primary)
+   width: 100%
+   max-width: 768px
+   &::first-letter
+      font-size: clamp(40px, calc(26.286px + 4.286vw), 88px)
+      font-family: 'Majestic'
+.icon
+   transition: fill 0.5s, stroke 0.5s
+.prog__content, .timing__tabs, .map__tabs, .menu ul
+   scrollbar-width: thin
+   scrollbar-color: transparent transparent
+.btn
+   display: flex
+   align-items: center
+   justify-content: center
+   transition: 0.5s
+   box-sizing: border-box
+   background: var(--color-primary)
+   color: var(--color-text-white)
+   &:hover
+      background: var(--color-text-yellow)
+      color: var(--color-text-white)
