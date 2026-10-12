@@ -55,7 +55,7 @@
 
 @font-face {
     font-family: 'Cormorant';
-    src: url('/fonts/Cormorant-SemiBold.woff2') format('woff2s');
+    src: url('/fonts/Cormorant-SemiBold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -69,13 +69,6 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Arial';
-    src: url('/fonts/ArialMT.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
 @font-face {
     font-family: 'Inter Semi';

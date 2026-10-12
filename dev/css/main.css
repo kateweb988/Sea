@@ -152,6 +152,18 @@
 .template-content input:focus-visible {
   outline: initial;
 }
+.template-content input::-webkit-input-placeholder {
+  color: rgba(4, 45, 71, 0.26) !important;
+}
+.template-content input::-moz-placeholder {
+  color: rgba(4, 45, 71, 0.26) !important;
+}
+.template-content input:-ms-input-placeholder {
+  color: rgba(4, 45, 71, 0.26) !important;
+}
+.template-content input:-moz-placeholder {
+  color: rgba(4, 45, 71, 0.26) !important;
+}
 .template-content div {
   box-sizing: border-box;
 }
@@ -293,7 +305,7 @@
 }
 @font-face {
   font-family: "Cormorant";
-  src: url("../fonts/Cormorant-SemiBold.woff2") format("woff2s");
+  src: url("../fonts/Cormorant-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -301,13 +313,6 @@
 @font-face {
   font-family: "Involve";
   src: url("../fonts/Involve-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Arial";
-  src: url("../fonts/ArialMT.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -326,22 +331,6 @@
   font-style: normal;
   font-display: swap;
 }
-input::-webkit-input-placeholder {
-  color: rgba(4, 45, 71, 0.26) !important;
-}
-
-input::-moz-placeholder {
-  color: rgba(4, 45, 71, 0.26) !important;
-}
-
-input:-ms-input-placeholder {
-  color: rgba(4, 45, 71, 0.26) !important;
-}
-
-input:-moz-placeholder {
-  color: rgba(4, 45, 71, 0.26) !important;
-}
-
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after, .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
   display: none;
 }
@@ -808,7 +797,7 @@ input:-moz-placeholder {
   font-family: "Involve";
 }
 .personal_greeting__row p {
-  font-family: "Arial";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(28px, 21.714px + 1.964vw, 50px);
   font-weight: 400;
   text-align: center;
@@ -2069,6 +2058,9 @@ input:-moz-placeholder {
   }
 }
 @media screen and (max-width: 1199px) {
+  .main__logo P {
+    font-size: clamp(19px, 8.571px + 1.071vw, 31px);
+  }
   .menu {
     position: fixed;
     top: 0px;
